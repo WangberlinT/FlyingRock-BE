@@ -1,10 +1,10 @@
 package com.flyingrock.db.dao
 
-import com.flyingrock.domain.user.User
+import com.flyingrock.db.UserDto
 
 interface UserDao {
-    suspend fun insertUser(user: User)
+    suspend fun insertUser(user: UserDto)
 
-    suspend fun getUserByUserName(userName: String): User?
+    suspend fun getUserByUserName(userName: String): UserDto?
 
 }

@@ -22,14 +22,8 @@ fun main(args: Array<String>) {
 
 fun Application.module() {
     FRDatabase.init()
-    install(Koin) {
-        modules(appModule)
-    }
-    install(ContentNegotiation) {
-        json(Json {
-            prettyPrint = true
-            isLenient = true
-        })
-    }
+    installKoin()
+    installContentNegotiation()
+    installStatusPages()
     configureRouting()
 }
