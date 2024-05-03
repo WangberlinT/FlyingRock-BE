@@ -1,6 +1,4 @@
-package com.flyingrock.handler
-
-import com.flyingrock.domain.ResponseBody
+package com.flyingrock.domain
 
 
 fun <T> T.toResponseBody(): ResponseBody<T> = ResponseBody(this)

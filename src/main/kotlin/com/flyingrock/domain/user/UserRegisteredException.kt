@@ -1,4 +1,4 @@
-package com.flyingrock.domain.login
+package com.flyingrock.domain.user
 
 class UserRegisteredException : Exception(){
 }

@@ -1,4 +1,9 @@
 package com.flyingrock.domain
 
-class ResponseBody {
-}
+import kotlinx.serialization.*
+
+@Serializable
+data class ResponseBody<T> (
+    @SerialName("data")
+    val data: T
+)

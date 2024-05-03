@@ -1,3 +1,10 @@
 package com.flyingrock.domain
 
-data class ErrorBody()
+import kotlinx.serialization.SerialName
+
+data class ErrorResponse(
+    @SerialName("error_code")
+    val errorCode: Int,
+    @SerialName("message")
+    val message: String?
+)
